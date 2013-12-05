@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id="sweetLover" class="com.thoughtworks.yafei.SweetLover">
+        <property name="fruit" ref="peach"/>
+    </bean>
+
+    <bean id="peach" class="com.thoughtworks.yafei.Peach"/>
+
+    <bean id="orange" class="com.thoughtworks.yafei.Orange"/>
+</beans>
